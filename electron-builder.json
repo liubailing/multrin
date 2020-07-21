@@ -1,0 +1,54 @@
+{
+  "appId": "org.sential.multrin",
+  "productName": "Multrin",
+  "asar": true,
+  "directories": {
+    "output": "dist",
+    "buildResources": "static/app-icons"
+  },
+  "files": [
+    "build/**/*",
+    "package.json"
+  ],
+  "publish": "github",
+  "linux": {
+    "category": "Network",
+    "target": [
+      {
+        "target": "deb",
+        "arch": [
+          "ia32",
+          "x64"
+        ]
+      },
+      {
+        "target": "AppImage",
+        "arch": [
+          "ia32",
+          "x64"
+        ]
+      }
+    ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64",
+          "ia32"
+        ]
+      },
+      {
+        "target": "zip",
+        "arch": [
+          "x64",
+          "ia32"
+        ]
+      }
+    ]
+  },
+  "mac": {
+    "category": "public.app-category.navigation"
+  }
+}
